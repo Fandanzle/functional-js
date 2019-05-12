@@ -1,3 +1,3 @@
 # Functional compositions compilation
 
-Simple compilation of functional Javascriptt .
+Simple compilation of functional Javascript.
