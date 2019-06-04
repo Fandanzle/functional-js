@@ -13,25 +13,21 @@
     "prepublishOnly": "yarn build",
     "start": "babel-node --extensions '.ts,.tsx' index.ts",
     "test": "jest",
-    "test:watch": "jest -o --watch",
-    "typecheck": "tsc"
+    "test:watch": "jest -o --watch"
   },
   "jest": {
     "setupFiles": [
-      "./jest.setup.js"
+      "./jest.config.js"
     ],
     "moduleDirectories": [
       "./node_modules",
       "./src"
     ],
     "moduleFileExtensions": [
-      "ts",
-      "tsx",
-      "js",
-      "jsx"
+      "js"
     ],
     "transform": {
-      "^.+\\.(js|jsx|ts|tsx)$": "babel-jest"
+      "^.+\\.(js)$": "babel-jest"
     }
   },
   "resolutions": {
@@ -46,26 +42,12 @@
     "@babel/plugin-syntax-dynamic-import": "^7.0.0",
     "@babel/plugin-syntax-import-meta": "^7.0.0",
     "@babel/preset-env": "^7.0.0",
-    "@babel/preset-react": "^7.0.0",
-    "@babel/preset-typescript": "^7.0.0",
     "@babel/register": "^7.0.0",
     "@types/jest": "^21.1.8",
     "@types/react": "^16.0.25",
     "@types/react-dom": "^16.0.3",
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^22.4.4",
-    "babel-plugin-module-resolver": "^3.0.0",
-    "enzyme": "^3.2.0",
-    "enzyme-adapter-react-16": "^1.1.0",
-    "jest": "21.3.0-beta.9",
-    "nodemon": "^1.12.1",
-    "tslint": "^5.8.0",
-    "tslint-config-standard": "^7.0.0",
-    "tslint-react": "^3.2.0",
-    "typescript": "^2.6.1"
-  },
-  "dependencies": {
-    "react": "^16.1.1",
-    "react-dom": "^16.1.1"
+    "babel-plugin-module-resolver": "^3.0.0"
   }
 }
