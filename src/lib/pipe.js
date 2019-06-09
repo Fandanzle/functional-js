@@ -1,5 +1,5 @@
-const pipe = (...fns) => payload =>
-  fns.reduce(
+const pipe = (...funcs) => payload =>
+  funcs.reduce(
     (accumalator, currentFunction) => currentFunction(accumalator),
     payload
   );

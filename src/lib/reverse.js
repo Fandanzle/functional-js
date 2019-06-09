@@ -1,5 +1,5 @@
-const reverse = (payload) => Array.isArray(payload) ? payload.reverse() : []
+const reverse = payload => Array.isArray(payload) ? payload.reverse() : [];
 
-module.export = {
+module.exports = {
     reverse
 }

@@ -1,6 +1,6 @@
-const compose = (...fns) => payload =>
-  fns.reduceRight(
-    (accumalator, currentFunction) => currentFunction(accumalator),
+const compose = (...funcs) => payload =>
+  funcs.reduceRight(
+    (accumalator, currentFunc) => currentFunc(accumalator),
     payload
   );
 
